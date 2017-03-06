@@ -312,3 +312,10 @@ i{
 .flip{
 	
 }
+
+@media screen and (max-width: 990px) {
+  .main {
+    display: block;
+    width: 90%;
+  }
+}
