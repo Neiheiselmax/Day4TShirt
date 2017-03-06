@@ -1,0 +1,314 @@
+html, body{
+	margin: 0px;
+	padding: 0px;
+	font-size: 0px;
+
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.main{
+	display: inline-block;
+	width: 31%;	
+	margin: 10px;
+	font-family: 'Lato', sans-serif;
+	color: #5CA4D7;
+}
+
+.main .top .corner{
+	font-size: 22px;
+	border: #5CA4D7 solid 3px;
+	width: 30px;
+	height: 30px;
+	position: absolute;	
+	top: -3px;
+    right: -3px;
+	background-color: white;
+	padding-bottom: 6px;
+
+}
+
+.corner i{
+	bottom-margin: 4px;
+    font-size: 16px;
+    margin-top: 4px;
+    padding-top: 0;
+    vertical-align: top;
+    margin-left: 4px;
+}
+
+.top{
+	position: relative;
+	border: 3px #5CA4d7 solid;
+	padding:30px;
+
+}
+
+.top img{
+	width: 100%;
+	
+}
+
+.middle i{
+	font-size:23px;
+}
+
+#color{
+
+	background-color: #5CA4d7;
+    border: 3px solid white;
+    width: 46% !important;
+    height: 32px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 13px;
+
+}
+
+.middle{
+	height: 100%;
+}
+
+#flip, #heart, #size, #colorbox, #cart{
+	height: 56px;
+	font-size: 16px;
+	border: 2px solid #5CA4d7;
+	display: inline-block;
+	text-align: center;
+	width: 20%;
+	margin: 0px;
+	padding: 0px;
+	vertical-align: top;
+	border-top: 0px;
+}
+
+#flip:hover, #heart:hover, #size:hover, #colorbox:hover, #cart:hover{
+	background-color: #5CA4d7;
+	color: white;
+}
+
+#flip{
+	border-left: 3px solid #5CA4D7;
+}
+
+#cart{
+	border-right: 3px solid #5CA4D7;
+}
+
+i{
+	margin-top: 18px;
+	font-size: 30px;
+}
+
+#size h3{
+	padding-top: 18px;
+	margin: 0px;
+	z-index: 30;
+}
+
+#ss{
+	padding-bottom: 10px;
+}
+
+.bottom{
+	margin-top: 15px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.bottom h3{
+	margin: 0px;
+	padding-bottom: 20px;
+	text-align: center;
+	display: inline-block;
+	font-size: 28px;
+	font-weight: 300;
+}
+
+.bottom h4{
+	margin: 0px;
+	padding-bottom: 20px;
+	text-align: center;
+	display: inline-block;
+	font-size: 28px;
+	font-weight: 700;
+	float: right;
+}
+
+/* size dropdown content */
+
+
+
+#size:hover .dropdown-content{
+     display: block;
+     animation-name: movePopUpDown;
+     animation-duration: .5s;
+
+}
+
+.dropdown {
+    position: relative;
+    width: 100%;
+}
+
+.dropdown-content, .arrow{
+	margin-top:-228px;
+	position:absolute;
+	display: none;
+	background-color: white;
+	font-size: 18px;
+	color: #5CA4D7;
+	width: 100%;
+	border: 3px solid #5CA4D7;
+
+}
+
+
+
+
+.arrow {
+	background-color:white;
+	width:20px;
+	height:20px;
+	display:block;
+	transform:rotate(45deg);
+	position: absolute;
+	bottom:-12px;
+	z-index:6;
+	right: 23px;
+	border: 3px solid #5CA4D7;
+	border-top: 0px;
+	border-left: 0px; 
+}	
+
+/* color square dropdown */
+
+#colorbox:hover .squaredropdown-content{
+     display: block;
+     animation-name: movePopUpDown2;
+     animation-duration: .5s;
+
+}
+
+.squaredropdown {
+    position: relative;
+    width: 100%;
+}
+
+.squaredropdown-content {
+	display: none;
+	margin-top: -146px;
+    background-color: white;
+    margin-left: -21px;
+    padding-top: 8px;
+    position: absolute;
+    padding-bottom: 8px;
+    font-size: 18px;
+    color: #5CA4D7;
+    width: 161%;
+    border: 3px solid #5CA4D7;
+
+}
+
+
+
+
+.squarearrow {
+	background-color:white;
+	width:20px;
+	height:20px;
+	display:block;
+	transform:rotate(45deg);
+	position: absolute;
+	bottom:-12px;
+	z-index:6;
+	right: 44px;
+	border: 3px solid #5CA4D7;
+	border-top: 0px;
+	border-left: 0px; 
+
+}
+
+
+.blue{
+	background-color: #5CA4D7;
+	
+}
+
+.pink{
+	background-color: #D482AA;
+	
+}
+
+.orange{
+	background-color: #DCB074;
+	
+}
+
+.green{
+	background-color: #8BB992;
+	
+}
+
+.blue, .pink, .orange, .green{
+
+	margin: 2px;
+	width: 50%;
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+}
+
+#colorpink{
+
+	background-color: #D482AA;
+    border: 3px solid white;
+    width: 46% !important;
+    height: 32px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 13px;
+
+}
+
+#colororange{
+
+	background-color: #dcb07d;
+    border: 3px solid white;
+    width: 46% !important;
+    height: 32px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 13px;
+
+}
+
+@keyframes movePopUpDown {
+  0% {
+    margin-top:-240px;
+    opacity: 0; }
+  30% {
+    opacity: .6; }
+  100% {
+    margin-top:-228px;
+    opacity: 1; 
+  } 
+}
+
+@keyframes movePopUpDown2 {
+  0% {
+    margin-top:-154px;
+    opacity: 0; }
+  30% {
+    opacity: .6; }
+  100% {
+    margin-top:-146px;
+    opacity: 1; 
+  } 
+}
+
+.flip{
+	
+}
