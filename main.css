@@ -71,7 +71,7 @@ html, body{
 	height: 100%;
 }
 
-#flip, #heart, #size, #colorbox, #cart{
+#flip, #heart, #size, #colorbox, #bluecart, #orangecart, #pinkcart{
 	height: 56px;
 	font-size: 16px;
 	border: 2px solid #5CA4d7;
@@ -84,7 +84,7 @@ html, body{
 	border-top: 0px;
 }
 
-#flip:hover, #heart:hover, #size:hover, #colorbox:hover, #cart:hover{
+#flip:hover, #heart:hover, #size:hover, #colorbox:hover, #bluecart:hover, #orangecart:hover, #pinkcart:hover{
 	background-color: #5CA4d7;
 	color: white;
 }
@@ -93,7 +93,7 @@ html, body{
 	border-left: 3px solid #5CA4D7;
 }
 
-#cart{
+#bluecart, #pinkcart, #orangecart{
 	border-right: 3px solid #5CA4D7;
 }
 
@@ -318,4 +318,15 @@ i{
     display: block;
     width: 90%;
   }
+}
+
+.price h3{
+	font-size: 22px;
+
+
+}
+
+.price{
+	display: block;
+	float: right;
 }
