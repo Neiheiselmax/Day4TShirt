@@ -3,11 +3,8 @@ var pinkbutton = document.getElementById('pinkcart');
 var orangebutton = document.getElementById('orangecart');
 var subtotalBox = document.getElementById('subtotal');
 var totalBox = document.getElementById('total');
-var bluePressed = false;
-var pinkPressed = false;
-var orangePressed = false;
 var beforetax = 0;
-var kart = document.getElementById('cart');
+var htmlBox = document.getElementById('itemsInCart');
 
 var blueShirt = {
   name:"Save My Trees",
@@ -27,17 +24,28 @@ var whatsInMyCart = [];
 
 
 function updateCart(){
-  var total = 0;
+  var subtotal = 0;
+
+  var html = "";
+
   whatsInMyCart.forEach(function(shirt){
-     total+=shirt.price;
-})
+     subtotal+=shirt.price;
+
+     html+= `
+
+      <div class="item"><h3>${shirt.name} $${shirt.price}</h3><div>
+
+     `
+  })
 
   subtotalBox.innerHTML = subtotal;
 
 
   var total = subtotal*1.065;
 
-  totalBox.inneHTML = total.toFixed(2);
+  totalBox.innerHTML = total.toFixed(2);
+
+  htmlBox.innerHTML = html;
   
   }
     

@@ -331,6 +331,10 @@ i{
 	float: right;
 }
 
-#cart{
+#itemsInCart{
 	font-size: 20px;
 }
+
+.item{
+	display: block;
+	position: absolute;
